@@ -1,0 +1,24 @@
+{
+  "name": "device-detector",
+  "version": "1.0.0",
+  "description": "A web app that takes in a User Agent from an HTTP request and tells you the brand and model of the device that made the request.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AjayBhatta16/device-detector.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AjayBhatta16/device-detector/issues"
+  },
+  "homepage": "https://github.com/AjayBhatta16/device-detector#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "node-device-detector": "^2.0.5"
+  }
+}
