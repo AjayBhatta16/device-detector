@@ -1,6 +1,7 @@
 const textarea = document.querySelector('textarea')
 const detectButton = document.querySelector('#detect')
 const deviceTxt = document.querySelector('#device')
+const clientTxt = document.querySelector('#client')
 
 detectButton.addEventListener('click', () => {
     const reqData = {
@@ -15,5 +16,6 @@ detectButton.addEventListener('click', () => {
         .then(res => res.json())
         .then(res => {
             deviceTxt.textContent = `${res.type} - ${res.brand} ${res.model} (${res.osName} ${res.osVersion})`
+            clientTxt.textContent = `${res.clientType} - ${res.clientName} ${res.clientVersion}`
         })
 })

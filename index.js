@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/public'))
 
 let detector = new DeviceDetector()
 
-app.get('/', (req, res) => {
+app.get('/', (_, res) => {
     res.sendFile('public/index.html', {root: __dirname})
 })
 
@@ -22,7 +22,10 @@ app.post('/device', (req, res) => {
         brand: detectedAgent.device.brand,
         model: detectedAgent.device.model,
         osName: detectedAgent.os.name,
-        osVersion: detectedAgent.os.version
+        osVersion: detectedAgent.os.version,
+        clientType: detectedAgent.client.type,
+        clientName: detectedAgent.client.name,
+        clientVersion: detectedAgent.client.version,
     })
 })
 

@@ -4,7 +4,8 @@
   "description": "A web app that takes in a User Agent from an HTTP request and tells you the brand and model of the device that made the request.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
