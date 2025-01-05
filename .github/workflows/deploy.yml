@@ -22,4 +22,4 @@ jobs:
 
     - name: Deploy to App Engine
       run: |
-        gcloud app deploy --version=next
+        gcloud app deploy app.yaml --version=next --quiet
