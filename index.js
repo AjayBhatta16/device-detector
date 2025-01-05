@@ -52,4 +52,8 @@ app.post('/device', (req, res) => {
     })
 })
 
+app.use((_, res) => {
+    res.status(404).render('404', { title: 'Page Not Found' });
+})
+
 app.listen(process.env.PORT || 3000)
